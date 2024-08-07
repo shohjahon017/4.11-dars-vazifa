@@ -1,18 +1,3 @@
-// let car = {
-//   name: "Mercedes",
-//   year: 2024,
-//   color: "white",
-//   maxSpeed: 350,
-//   weight: 2500,
-//   about: function () {
-//     console.log(this.name + " " + this.year);
-//   },
-// };
-// // Object.freeze(car);
-// // car.color = "black";
-// // console.log(car);
-// car.about();
-
 //1-masala
 // let arr = [1, 2, 3, 6, 9, 2, 8, 7];
 // function oddElement(arg) {
@@ -35,7 +20,6 @@
 //       res.push(element);
 //     }
 //   }
-
 //   return res;
 // }
 // console.log(getNumber(str));
@@ -69,6 +53,16 @@
 // console.log(reverseStr(str));
 
 //6-masala
+// function findDigitProduct(num) {
+//   const l = num.toString().split("").map(Number);
+//   let p = 1;
+//   for (const element of l) {
+//     p *= element;
+//   }
+
+//   return p;
+// }
+// console.log(findDigitProduct(153));
 
 //7-masala
 // let arr = [1, 8, 9, 10, 5, 2, 7];
@@ -81,15 +75,10 @@
 
 //8-masala
 // let str = "hello world";
-// function deleteStr(arg){
-// let
-//   for (const element of arg) {
-//     if(element.includes('hello')){
-
-//     }
-//   }
-
+// function deleteStr(arg, text) {
+//   return arg.replace(text, "");
 // }
+// console.log(deleteStr(str, "hello"));
 
 //9-masala
 // let arr = ["olma", "anor", "banan"];
@@ -175,6 +164,17 @@
 // console.log(sqrtElement(arr));
 
 //16-masala
+// let arr = [5, 5, 6, 9, 3, 1, 1, 5, 8];
+// function uniqueElement(arg) {
+//   let unique = [];
+//   for (const element of arg) {
+//     if (arg.indexOf(element) === arg.lastIndexOf(element)) {
+//       unique.push(element);
+//     }
+//   }
+//   return unique;
+// }
+// console.log(uniqueElement(arr));
 
 //17-masala
 // let arr = [1, 9, 3, 5, "salom", 5, 7, "xayr"];
@@ -196,3 +196,40 @@
 //   return arg.sort();
 // }
 // console.log(sortElement(arr));
+
+//20-masala
+// let str = "salom yaxshimisizlar";
+// function toUpperCaseFirst(arg) {
+//   let res = arg.split(" ").map((element) => {
+//     return element[0].toUpperCase() + element.slice(1);
+//   });
+//   return res.join(" ");
+// }
+// console.log(toUpperCaseFirst(str));
+
+//21-masala
+// let str = "sa lom bolal ar";
+// function removeSpace(arg) {
+//   let res = [];
+//   for (const element of arg) {
+//     if (element != " ") {
+//       res.push(element);
+//     }
+//   }
+//   return res.join("");
+// }
+// console.log(removeSpace(str));
+
+//22-masala
+// let str = "hello world";
+// function reverseElement(arg) {
+//   return arg.split(" ").reverse().join(" ");
+// }
+// console.log(reverseElement(str));
+
+//23-masala
+// let arr = "olma, nok, anor";
+// function lengthElement(arg) {
+//   return arg.split(" ").map((element) => element.length);
+// }
+// console.log(lengthElement(arr));
